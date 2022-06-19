@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="estilo_dashboard.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Dashboard</title>
+  </head>
+  
+  <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Projeto Fintech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Minha conta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+      <div class="container">
+      <div class="row">
+        
+        <span class= "titulo mb-2">Olá usuário, este é seu dashboard...</span> 
+
+        <div class="col-sm-12">
+          <div class="card radius-10">
+            <div class="card-body">
+                  
+
+                  <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">LANÇAMENTO</th>
+                      <th scope="col">DATA</th>
+                      <th scope="col">VALOR</th>
+                      <th scope="col">DESCRIÇÃO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-info">
+                      <th scope="row">Investimento</th>
+                      <td>19/09/2022</td>
+                      <td>R$ 3.274,58</td>
+                      <td>CDB</td>
+                    </tr>
+                    <tr class="table-success">
+                      <th scope="row">Entrada</th>
+                      <td>17/04/2022</td>
+                      <td>R$ 2.052,63</td>
+                      <td>Salário</td>
+                    </tr>
+                    <tr class="table-danger">
+                      <th scope="row">Gasto</th>
+                      <td>27/03/2022</td>
+                      <td>R$ 1.482,79</td>
+                      <td>Eletrodoméstico</td>
+                    </tr>
+                    <tr class="table-success">
+                      <th scope="row">Entrada</th>
+                      <td>17/12/2021</td>
+                      <td>R$ 1.432,87</td>
+                      <td>Serviço Prestado</td>
+                    </tr>
+                     <tr class="table-danger">
+                      <th scope="row">Gasto</th>
+                      <td>07/10/2021</td>
+                      <td>R$ 2.415,75</td>
+                      <td>Manutenção</td>
+                    </tr>
+                    <tr class="table-info">
+                      <th scope="row">Investimento</th>
+                      <td>30/07/2021</td>
+                      <td>R$ 7.315,00</td>
+                      <td>Ações</td>
+                     </tr>
+                </tbody>
+                  </table>
+
+
+              <div class="d-flex">
+                <div class="ms-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex">
+                <div>
+                  <p class="mb-0 text-secondary">Seus investimentos</p>
+                  <h4 class="my-1 text-info">R$ 10.589,58</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card radius-10">
+             <div class="card-body">
+                <div class="d-flex">
+                  <div>
+                    <p class="mb-0 text-secondary">Gasto</p>
+                    <h4 class="my-1 text-danger">R$ 3.898,54</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col-sm-4">
+          <div class="card radius-10">
+            <div class="card-body">
+              <div class="d-flex">
+                <div>
+                  <p class="mb-0 text-secondary">Entrada </p>
+                  <h4 class="my-1 text-success">R$ 3.485,50</h4>
+                </div>
+                <div class="ms-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col-sm-4">
+          <div class="card_i radius-10">
+            <div class="card-body">
+              <div class="d-flex">
+                <div>
+                  <h4 class="my-1 text-secondary">Adicionar investimento
+                  <i class="icon bi bi-arrow-up-circle-fill"></i></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+       <div class="col-sm-4 ">
+          <div class="card_g radius-10">
+            <div class="card-body">
+              <div class="d-flex">
+                <div>
+                  <h4 class="my-1 text-secondary">Adicionar gasto
+                    <i class="icon bi bi-arrow-up-circle-fill" id="addg"></i></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4 ">
+          <div class="card_e radius-10 ">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <h4 class="my-1 text-secondary">Adicionar Entrada
+                  <i class="icon bi bi-arrow-up-circle-fill"></i></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div> 
+    </div>
+  </div>
+</body>
+</html>
